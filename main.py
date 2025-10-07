@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
-from pydantic import BaseModel
 from typing import List, Optional
 import os
 import pandas as pd
