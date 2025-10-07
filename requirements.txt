@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pandas
+numpy
+boto3
+python-dotenv
