@@ -257,9 +257,6 @@ def sync_data():
         s3_manager.download_df(article_path, bucket='mlops', key=f'articles/articles.parquet')
 
         for coin in coins:
-            price_test_path = f"data/prices/{coin}_test.csv"
-            s3_manager.download_df(price_test_path, bucket='mlops', key=f'prices/{coin}_test.parquet')
-
             prices_path = f"data/prices/{coin}.csv"
             s3_manager.download_df(prices_path, bucket='mlops', key=f'prices/{coin}.parquet')
 
@@ -387,9 +384,9 @@ def sync_data():
     
 
 
-sync_data()
-state["overall_last_sync"], task_name = get_last_successful_post_train()
-print(f"Initial overall last sync at {state['overall_last_sync']} from task {task_name}")
+# sync_data()
+# state["overall_last_sync"], task_name = get_last_successful_post_train()
+# print(f"Initial overall last sync at {state['overall_last_sync']} from task {task_name}")
 
 
 # ------------------------------
