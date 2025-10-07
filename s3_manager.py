@@ -3,9 +3,7 @@ import pandas as pd
 from io import BytesIO
 import hashlib
 import os
-import tempfile
 from pathlib import Path
-import mlflow
 from urllib.parse import urlparse
 
 def create_dir(path):
